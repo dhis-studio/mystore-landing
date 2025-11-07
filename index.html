@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyStore — Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0088CC; /* Somali blue */
+      --dark: #111111;
+      --light: #f5f5f5;
+    }
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      text-align: center;
+    }
+    header {
+      padding: 60px 20px;
+      max-width: 650px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    p.sub {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 40px;
+    }
+    form {
+      background: #fff;
+      padding: 32px;
+      border-radius: 14px;
+      max-width: 450px;
+      margin: auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+    button:hover {
+      background: #006fa5;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span style="color: var(--primary); font-weight:700;">MyStore</span>.so</h1>
+  <p class="sub">Create your store. Sell anything. Get paid locally.</p>
+  <p><strong>Early access for Mogadishu stores — join the waiting list.</strong></p>
+</header>
+
+<form id="waitlistForm" action="https://formspree.io/f/xovpgzrg" method="POST">
+  <input type="text" name="store_name" placeholder="Store name (e.g., Amina Books)" required>
+  <input type="text" name="phone" placeholder="Owner phone number" required>
+  <input type="email" name="email" placeholder="WhatsApp / Email" required>
+  <button type="submit">Join Early Access →</button>
+</form>
+
+<footer>
+  <p>Copyright © MyStore.so — 2025</p>
+</footer>
+
+</body>
+</html>
